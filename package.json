@@ -3,6 +3,8 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@nutui/nutui-react": "^2.0.13",
+    "@reduxjs/toolkit": "^1.9.1",
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
@@ -10,10 +12,25 @@
     "@types/node": "^16.18.40",
     "@types/react": "^18.2.20",
     "@types/react-dom": "^18.2.7",
+    "@types/react-pdf": "^6.2.0",
+    "@unocss/preset-attributify": "^0.52.1",
+    "@unocss/preset-icons": "^0.52.1",
+    "@unocss/preset-uno": "^0.52.1",
+    "@vitejs/plugin-react": "^2.2.0", 
+    "axios": "^1.2.1",
+    "dayjs": "^1.11.8",
+    "insert-css": "^2.0.0", 
     "react": "^18.2.0",
-    "react-dom": "^18.2.0",
+    "react-dom": "^18.2.0",  
+    "react-redux": "^8.0.5",
+    "react-router-dom": "^6.4.5",
     "react-scripts": "5.0.1",
+    "redux": "^4.2.0",
+    "redux-thunk": "^2.4.2",
+    "sass": "^1.56.2",
     "typescript": "^4.9.5",
+    "unocss": "^0.52.1",
+    "vite": "^3.2.3",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
@@ -22,12 +39,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
-  },
+
   "browserslist": {
     "production": [
       ">0.2%",
