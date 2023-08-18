@@ -1,13 +1,27 @@
 .userInfo {
-  
+    position: relative;
+    width: 100%;
     background-color: #fcfcfe;
-    padding: 40px;
+    padding:0 40px  40px 40px;
     box-sizing: border-box;
     transition: all .2s ease-in-out;
 
     .trm-mc-header {
-
+        width: 100%;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 140px;
         text-align: center;
+    }
+
+    .trm-banner-cover {
+
+        width: 125%;
+        margin-left: -40px;
+        border-radius: 10px;
+        height: 100%;
+        object-fit: cover;
     }
 
     .trm-avatar {
@@ -147,7 +161,7 @@
 }
 
 .userInfo::after {
-  
+
     content: '';
     position: absolute;
     left: 30px;

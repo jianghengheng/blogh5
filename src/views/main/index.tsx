@@ -1,24 +1,37 @@
-/* eslint-disable jsx-a11y/anchor-has-content */
-
-
-
 
 import { useState, useEffect, memo, useRef } from 'react'
-import avator from '../../assets/avatar.jpg'
+import avator from '@/assets/avatar.jpg'
 import './index.scss'
 import '../../assets/iconfont/iconfont.css'
-import React from 'react'
-
-
+import { Input, Avatar } from '@nutui/nutui-react';
+import { Notice } from '@nutui/icons-react';
 function Main() {
 
 
 
     return (
         <>
-            <div className='userInfo' >
+            <div className='w-100% flex justify-around items-center'>
+                <div>首页</div> <div> <Input placeholder="请输入文本" /></div><div className='flex  items-center'>
+                    <Notice  ></Notice>
+                    <Avatar
+                    className='ml-10px'
+                        size="small"
+                        src={avator}
+                    />
+                </div>
+            </div>
+            <div className='h-10px bg-#f2f3f5 w-100%'>
+            </div>
+            
+            <div className='userInfo'>
+            <video data-scroll data-scroll-direction data-scroll-speed autoPlay loop muted playsInline className='trm-banner-cover trm-active-el'>
+                        <source src="//cdn.moji.com/websrc/video/autumn20190924.mp4" type="video/mp4; " />
+                    </video>
+        
                 <div className='trm-mc-header'>
                     <div className='trm-avatar' >
+                   
                         <img className='avatar' src={avator} alt="" />
                     </div>
                     <h5>衡衡蒋</h5>
@@ -27,14 +40,10 @@ function Main() {
                     </div>
                     <div className='point'></div>
                     <div className='trm-social'>
-                        <a className="iconfont icon-github-fill" target='_blank' href="https://github.com/jianghengheng/">
+                        <a className="iconfont icon-github-fill" target='_blank' href="https://github.com/jianghengheng/" />
 
-                        </a>
                         <a className="iconfont icon-weixin" href="weixin://"
-                            onClick={()=>{'PIWI_SUBMIT.Weixin_Open()'}} ></a>
-
-                    
- 
+                            onClick={() => { 'PIWI_SUBMIT.Weixin_Open()' }} ></a>
                         <a className="iconfont icon-youxiang" href="mailto:wsjiangheng@163.com"></a>
                         <a className="iconfont icon-phone" title='16622136952' href="tel:16622136952">
 

@@ -1,6 +1,9 @@
 lockfileVersion: '6.0'
 
 dependencies:
+  '@nutui/icons-react':
+    specifier: ^0.0.1
+    version: 0.0.1
   '@nutui/nutui-react':
     specifier: ^2.0.13
     version: 2.0.13(react-dom@18.2.0)(react@18.2.0)

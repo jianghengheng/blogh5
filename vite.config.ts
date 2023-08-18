@@ -36,6 +36,18 @@ export default defineConfig(config=>{
         ]
       }
     },
+  
+      build: {
+        outDir:"h5",
+      rollupOptions: {
+        output: {
+          chunkFileNames: 'assets/[hash].js',
+          assetFileNames: 'assets/[hash].[ext]',
+          entryFileNames: 'assets/[hash].js',
+          
+        }
+      }
+    },
     plugins: [react(),Unocss({ // 使用Unocss
       presets: [
         presetUno(),
